@@ -8,5 +8,6 @@ To run this project, simply go to testng.xml file as below and run as testng.
 <img width="777" height="573" alt="image" src="https://github.com/user-attachments/assets/3739a46b-12d9-4e88-a6f3-509b64b02d6b" />
 
 The report will be generated in "testreport" folder. User able to check the result by navigating into the generated report.
-<img width="1211" height="625" alt="image" src="https://github.com/user-attachments/assets/60f0daec-5d30-4b34-9e90-8591e6571db4" />
+<img width="1893" height="691" alt="image" src="https://github.com/user-attachments/assets/69a0575a-9370-4066-9565-7c91ddacfe78" />
+
 
