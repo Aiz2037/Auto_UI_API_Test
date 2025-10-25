@@ -10,7 +10,7 @@ In general the project framework looks like below diagram.
 
 
 To run this project, simply go to testng.xml file as below and run as testng.
-<img width="722" height="598" alt="image" src="https://github.com/user-attachments/assets/91699cee-b157-4687-9cde-c3985951df40" />
+<img width="777" height="573" alt="image" src="https://github.com/user-attachments/assets/3739a46b-12d9-4e88-a6f3-509b64b02d6b" />
 
 The report will be generated in "testreport" folder. User able to check the result by navigating into the generated report.
 
