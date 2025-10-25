@@ -6,11 +6,27 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="apiTest.apiTest2">
+      <class name="TestBases.TestCase3">
         <methods>
-          <include name="postComment"/>
+          <include name="quitTest"/>
+          <include name="setup"/>
+          <include name="incorrectPassword"/>
         </methods>
-      </class> <!-- apiTest.apiTest2 -->
+      </class> <!-- TestBases.TestCase3 -->
+      <class name="TestBases.TestCase2">
+        <methods>
+          <include name="quitTest"/>
+          <include name="loginWithLockedAccount"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestBases.TestCase2 -->
+      <class name="TestBases.TestCase4">
+        <methods>
+          <include name="quitTest"/>
+          <include name="setup"/>
+          <include name="completeCheckout"/>
+        </methods>
+      </class> <!-- TestBases.TestCase4 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

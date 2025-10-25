@@ -1,17 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="4" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-26T00:36:29 MYT" name="Default suite" finished-at="2025-10-26T00:36:33 MYT" duration-ms="4153">
+  <suite started-at="2025-10-26T01:41:07 MYT" name="Suite" finished-at="2025-10-26T01:42:01 MYT" duration-ms="53711">
     <groups>
     </groups>
-    <test started-at="2025-10-26T00:36:29 MYT" name="Default test" finished-at="2025-10-26T00:36:33 MYT" duration-ms="4153">
+    <test started-at="2025-10-26T01:41:07 MYT" name="Test" finished-at="2025-10-26T01:42:01 MYT" duration-ms="53711">
+      <class name="apiTest.apiTest1">
+        <test-method signature="testCommentResponse()[pri:0, instance:apiTest.apiTest1@58a9760d]" started-at="2025-10-26T01:41:55 MYT" name="testCommentResponse" finished-at="2025-10-26T01:41:58 MYT" duration-ms="2951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCommentResponse -->
+      </class> <!-- apiTest.apiTest1 -->
+      <class name="TestBases.TestCase1">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestBases.TestCase1@7d8704ef]" started-at="2025-10-26T01:41:08 MYT" name="setup" finished-at="2025-10-26T01:41:18 MYT" duration-ms="9876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginSuccessful()[pri:0, instance:TestBases.TestCase1@7d8704ef]" started-at="2025-10-26T01:41:18 MYT" name="verifyLoginSuccessful" finished-at="2025-10-26T01:41:19 MYT" duration-ms="896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginSuccessful -->
+        <test-method is-config="true" signature="quitTest()[pri:0, instance:TestBases.TestCase1@7d8704ef]" started-at="2025-10-26T01:41:19 MYT" name="quitTest" finished-at="2025-10-26T01:41:22 MYT" duration-ms="3429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitTest -->
+      </class> <!-- TestBases.TestCase1 -->
+      <class name="TestBases.TestCase3">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestBases.TestCase3@4e50c791]" started-at="2025-10-26T01:41:31 MYT" name="setup" finished-at="2025-10-26T01:41:37 MYT" duration-ms="6161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="incorrectPassword()[pri:0, instance:TestBases.TestCase3@4e50c791]" started-at="2025-10-26T01:41:37 MYT" name="incorrectPassword" finished-at="2025-10-26T01:41:38 MYT" duration-ms="393" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at TestBases.TestCase3.incorrectPassword(TestCase3.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectPassword -->
+        <test-method is-config="true" signature="quitTest()[pri:0, instance:TestBases.TestCase3@4e50c791]" started-at="2025-10-26T01:41:38 MYT" name="quitTest" finished-at="2025-10-26T01:41:41 MYT" duration-ms="3412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitTest -->
+      </class> <!-- TestBases.TestCase3 -->
+      <class name="TestBases.TestCase2">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestBases.TestCase2@1e66f1f5]" started-at="2025-10-26T01:41:22 MYT" name="setup" finished-at="2025-10-26T01:41:27 MYT" duration-ms="5305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithLockedAccount()[pri:2, instance:TestBases.TestCase2@1e66f1f5]" started-at="2025-10-26T01:41:27 MYT" name="loginWithLockedAccount" finished-at="2025-10-26T01:41:28 MYT" duration-ms="374" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at TestBases.TestCase2.loginWithLockedAccount(TestCase2.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithLockedAccount -->
+        <test-method is-config="true" signature="quitTest()[pri:0, instance:TestBases.TestCase2@1e66f1f5]" started-at="2025-10-26T01:41:28 MYT" name="quitTest" finished-at="2025-10-26T01:41:31 MYT" duration-ms="3362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitTest -->
+      </class> <!-- TestBases.TestCase2 -->
+      <class name="TestBases.TestCase4">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestBases.TestCase4@7530ad9c]" started-at="2025-10-26T01:41:41 MYT" name="setup" finished-at="2025-10-26T01:41:46 MYT" duration-ms="5158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="completeCheckout()[pri:0, instance:TestBases.TestCase4@7530ad9c]" started-at="2025-10-26T01:41:46 MYT" name="completeCheckout" finished-at="2025-10-26T01:41:52 MYT" duration-ms="5740" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at TestBases.TestCase4.completeCheckout(TestCase4.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeCheckout -->
+        <test-method is-config="true" signature="quitTest()[pri:0, instance:TestBases.TestCase4@7530ad9c]" started-at="2025-10-26T01:41:52 MYT" name="quitTest" finished-at="2025-10-26T01:41:55 MYT" duration-ms="3265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitTest -->
+      </class> <!-- TestBases.TestCase4 -->
+      <class name="apiTest.apiTest3">
+        <test-method signature="testUserResponse()[pri:0, instance:apiTest.apiTest3@394df057]" started-at="2025-10-26T01:42:01 MYT" name="testUserResponse" finished-at="2025-10-26T01:42:01 MYT" duration-ms="623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserResponse -->
+      </class> <!-- apiTest.apiTest3 -->
       <class name="apiTest.apiTest2">
-        <test-method signature="postComment()[pri:0, instance:apiTest.apiTest2@385c9627]" started-at="2025-10-26T00:36:29 MYT" name="postComment" finished-at="2025-10-26T00:36:33 MYT" duration-ms="4099" status="PASS">
+        <test-method signature="postComment()[pri:0, instance:apiTest.apiTest2@71e9ddb4]" started-at="2025-10-26T01:41:58 MYT" name="postComment" finished-at="2025-10-26T01:42:01 MYT" duration-ms="2354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postComment -->
       </class> <!-- apiTest.apiTest2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

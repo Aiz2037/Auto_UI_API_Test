@@ -6,14 +6,15 @@
   	</listeners>
   <test thread-count="5" name="Test">
   
-  
-  	
   	<classes>
-    	<!--<class name="TestBases.TestCase1"/>
+  		
+  		<!--UI testing-->
+    	<class name="TestBases.TestCase1"/>
     	<class name="TestBases.TestCase2"/>
     	<class name="TestBases.TestCase3"/>
-    	<class name="TestBases.TestCase4"/>-->
+    	<class name="TestBases.TestCase4"/>
     	
+    	<!--API testing-->
     	<class name="apiTest.apiTest1"/>
     	<class name="apiTest.apiTest2"/>
     	<class name="apiTest.apiTest3"/>

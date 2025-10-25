@@ -26,8 +26,8 @@ public class ExtentReportManager implements ITestListener{
 		reportName = "Test Report" + timestamp + ".html";
 		sparkreporter = new ExtentSparkReporter("C:\\Users\\ahmad\\eclipse-workspace\\assignment\\testreport\\"+reportName);
 		
-		sparkreporter.config().setDocumentTitle("SWAB LABS REPORT");
-		sparkreporter.config().setReportName("SWAB LABS REPORT");
+		sparkreporter.config().setDocumentTitle("UI & API TESTING");
+		sparkreporter.config().setReportName("UI & API TESTING");
 		sparkreporter.config().setTheme(Theme.DARK);
 		
 		extent = new ExtentReports();
@@ -36,11 +36,11 @@ public class ExtentReportManager implements ITestListener{
 		extent.setSystemInfo("User", "Ahmad Aizuddin bin Azman");//System.getProperty("user.name"));
 		extent.setSystemInfo("Environment", "QA");
 		
-		String os = testContext.getCurrentXmlTest().getParameter("os");
-		extent.setSystemInfo("Operating System", os);
+		//String os = testContext.getCurrentXmlTest().getParameter("os");
+		extent.setSystemInfo("Operating System", "Windows 11");
 	
-		String browser = testContext.getCurrentXmlTest().getParameter("browser");
-		extent.setSystemInfo("Browser name", browser);
+		//String browser = testContext.getCurrentXmlTest().getParameter("browser");
+		extent.setSystemInfo("Browser name", "Google Chrome");
 		
 	}
 	
