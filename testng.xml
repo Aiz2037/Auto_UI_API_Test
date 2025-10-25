@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+  		<listener class-name="Utilities.ExtentReportManager"/>
+  	</listeners>
+  <test thread-count="5" name="Test">
+  
+  
+  	
+  	<classes>
+    	<!--<class name="TestBases.TestCase1"/>
+    	<class name="TestBases.TestCase2"/>
+    	<class name="TestBases.TestCase3"/>
+    	<class name="TestBases.TestCase4"/>-->
+    	
+    	<class name="apiTest.apiTest1"/>
+    	<class name="apiTest.apiTest2"/>
+    	<class name="apiTest.apiTest3"/>
+    		
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
