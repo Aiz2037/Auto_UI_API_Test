@@ -1,4 +1,5 @@
-This project focusses on doing automation for UI testing and API testing. This project runs on Java, Selenium, TestNG and RestAssured using Eclipse IDE.The targeted website for UI testing is "https://www.saucedemo.com/". The webdriver is based on google chrome.The targeted website for API testing is "https://jsonplaceholder.typicode.com/"
+This project focusses on doing automation for UI testing and API testing. This project runs on Java, Selenium, TestNG and RestAssured using Eclipse IDE.The targeted website for UI testing is "https://www.saucedemo.com/". The webdriver is based on google chrome. 
+Meanwhile for API testing is "https://jsonplaceholder.typicode.com/"
 In general the project framework looks like below diagram.
 <img width="1057" height="683" alt="image" src="https://github.com/user-attachments/assets/d4a962cd-11d2-49f4-a69d-6bb301cee0a1" />
 
