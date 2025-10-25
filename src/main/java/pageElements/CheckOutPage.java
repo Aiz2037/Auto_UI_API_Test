@@ -2,16 +2,18 @@ package pageElements;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class CheckOutPage extends BasePage{
 
+	Actions act = new Actions(driver);
 	public CheckOutPage(WebDriver driver) {
 		super(driver);
 	}
 	
-	@FindBy(xpath="//button[@id='checkout']")
+	@FindBy(xpath="//div[@id='contents_wrapper']/div[@id='cart_contents_container']/div/div[@class='cart_footer']/button[@id='checkout']")
 	WebElement checkOutButton;
 	@FindBy(xpath="//input[@id='first-name']")
 	WebElement firstName;
@@ -28,7 +30,9 @@ public class CheckOutPage extends BasePage{
 	
 	
 	public void checkOutProduct() {
-		toWait.until(ExpectedConditions.elementToBeClickable(checkOutButton)).click();
+		
+		act.moveToElement(checkOutButton).click(checkOutButton).build().perform();
+		//toWait.until(ExpectedConditions.elementToBeClickable(checkOutButton)).click();
 	
 	}
 	
