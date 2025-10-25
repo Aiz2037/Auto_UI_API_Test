@@ -6,7 +6,11 @@ The targeted website for API testing is "https://jsonplaceholder.typicode.com/"
 
 This project runs on Java, Selenium, TestNG and RestAssured using Eclipse IDE.
 
+In general the project framework looks like below diagram.
+
+
 To run this project, simply go to testng.xml file as below and run as testng.
 <img width="722" height="598" alt="image" src="https://github.com/user-attachments/assets/91699cee-b157-4687-9cde-c3985951df40" />
 
-The report will be generated in "testreport" folder.
+The report will be generated in "testreport" folder. User able to check the result by navigating into the generated report.
+
