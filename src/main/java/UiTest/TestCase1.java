@@ -1,4 +1,4 @@
-package TestBases;
+package UiTest;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 

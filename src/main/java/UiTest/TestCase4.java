@@ -1,4 +1,4 @@
-package TestBases;
+package UiTest;
 
 import java.time.Duration;
 

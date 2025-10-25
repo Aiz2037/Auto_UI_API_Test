@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+
+	<!--create-report-->
 	<listeners>
   		<listener class-name="Utilities.ExtentReportManager"/>
   	</listeners>
@@ -9,10 +11,10 @@
   	<classes>
   		
   		<!--UI testing-->
-    	<class name="TestBases.TestCase1"/>
-    	<class name="TestBases.TestCase2"/>
-    	<class name="TestBases.TestCase3"/>
-    	<class name="TestBases.TestCase4"/>
+    	<class name="UiTest.TestCase1"/>
+    	<class name="UiTest.TestCase2"/>
+    	<class name="UiTest.TestCase3"/>
+    	<class name="UiTest.TestCase4"/>
     	
     	<!--API testing-->
     	<class name="apiTest.apiTest1"/>
