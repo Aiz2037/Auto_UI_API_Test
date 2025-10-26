@@ -38,12 +38,12 @@ public class CheckOutPage extends BasePage{
 	public void checkOutProduct() {
 	
 		//act.moveToElement(checkOutButton).doubleClick(checkOutButton).build().perform(); //UNABLE TO CLICK
-		//toWait.until(ExpectedConditions.elementToBeClickable(checkOutButton)).click(); //UNABLE TO CLICK
+		toWait.until(ExpectedConditions.elementToBeClickable(checkOutButton)).click(); //UNABLE TO CLICK
 		//checkOutButton.click(); UNABLE TO CLICK
 		//js.executeScript("arguments[0].scrollIntoView;", checkOutButton); //UNABLE TO CLICK
 		//js.executeScript("window.scrollBy(0,600)");	
 		//js.executeScript("arguments[0].click()", checkOutButton); //UNABLE TO CLICK
-		js.executeAsyncScript("arguments[0].click()", checkOutButton); //UNABLE TO CLICK
+		//js.executeAsyncScript("arguments[0].click()", checkOutButton); //UNABLE TO CLICK
 	}
 	
 	public void insertRecipientDetails(String firstName, String lastName, String postalCode) {
