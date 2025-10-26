@@ -1,5 +1,4 @@
-This project focusses on doing automation for UI testing and API testing. This project runs on Java, Selenium, TestNG and RestAssured using Eclipse IDE. The targeted website for UI testing is "https://www.saucedemo.com/". The webdriver is based on google chrome with installed selectorhub to help generate the xpath.
-<img width="667" height="311" alt="image" src="https://github.com/user-attachments/assets/dbfecdaf-a77a-4a91-ac32-e355d6395543" />
+This project focusses on doing automation for UI testing and API testing. This project runs on Java, Selenium, TestNG and RestAssured using Eclipse IDE. The targeted website for UI testing is "https://www.saucedemo.com/". The webdriver is based on google chrome.
 
 Meanwhile for API testing is "https://jsonplaceholder.typicode.com/" for free online REST API .
 
