@@ -92,6 +92,7 @@ public class BaseTest {
 											String postalCode) throws InterruptedException {
 		mp.addProductToCart(productName);
 		mp.goCheckOutPage();
+		
 		ckp.checkOutProduct();
 		ckp.insertRecipientDetails(firstName, lastName, postalCode);
 		ckp.submitRecipientDetails();

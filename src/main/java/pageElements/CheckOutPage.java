@@ -18,11 +18,11 @@ public class CheckOutPage extends BasePage{
 	}
 	
 	//div[@id='root']/div[@id='page_wrapper']/div[@id='contents_wrapper']/div[@id='cart_contents_container']/div/div[@class='cart_footer']
-	@FindBy(xpath="//button[@id='checkout']")
+	@FindBy(xpath="//button[@id='checkout']") 
 	WebElement checkOutButton;
 	@FindBy(xpath="//input[@id='first-name']")
 	WebElement firstName;
-	@FindBy(xpath="(//input[@id='last-name'])[1]")
+	@FindBy(xpath="//input[@id='last-name'])[1]")
 	WebElement lastName;
 	@FindBy(xpath="//input[@id='postal-code']")
 	WebElement postalCode;
@@ -36,14 +36,14 @@ public class CheckOutPage extends BasePage{
 	//WebElement checkButton = driver.findElement(By.cssSelector("button[id='checkout']"));
 	
 	public void checkOutProduct() {
-		
-		
-		//act.moveToElement(checkOutButton).doubleClick(checkOutButton).build().perform(); UNABLE TO CLICK
-		toWait.until(ExpectedConditions.elementToBeClickable(checkOutButton)).click(); //UNABLE TO CLICK
+	
+		//act.moveToElement(checkOutButton).doubleClick(checkOutButton).build().perform(); //UNABLE TO CLICK
+		//toWait.until(ExpectedConditions.elementToBeClickable(checkOutButton)).click(); //UNABLE TO CLICK
 		//checkOutButton.click(); UNABLE TO CLICK
-		//js.executeScript("arguments[0].scrollIntoView;", checkOutButton); UNABLE TO CLICK
+		//js.executeScript("arguments[0].scrollIntoView;", checkOutButton); //UNABLE TO CLICK
 		//js.executeScript("window.scrollBy(0,600)");	
-		//js.executeScript("arguments[0].click();", checkOutButton); //UNABLE TO CLICK
+		//js.executeScript("arguments[0].click()", checkOutButton); //UNABLE TO CLICK
+		js.executeAsyncScript("arguments[0].click()", checkOutButton); //UNABLE TO CLICK
 	}
 	
 	public void insertRecipientDetails(String firstName, String lastName, String postalCode) {
