@@ -2,6 +2,7 @@ package pageElements;
 
 import java.time.Duration;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -11,6 +12,7 @@ public class BasePage {
 	
 	WebDriver driver;
 	WebDriverWait toWait = new WebDriverWait(driver, Duration.ofSeconds(5));
+	JavascriptExecutor js = (JavascriptExecutor)driver;
 	
 	public BasePage(WebDriver driver) 
 	{

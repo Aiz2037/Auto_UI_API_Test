@@ -1,5 +1,9 @@
 package pageElements;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -13,7 +17,8 @@ public class CheckOutPage extends BasePage{
 		super(driver);
 	}
 	
-	@FindBy(xpath="//div[@id='contents_wrapper']/div[@id='cart_contents_container']/div/div[@class='cart_footer']/button[@id='checkout']")
+	//div[@id='root']/div[@id='page_wrapper']/div[@id='contents_wrapper']/div[@id='cart_contents_container']/div/div[@class='cart_footer']
+	@FindBy(xpath="//button[@id='checkout']")
 	WebElement checkOutButton;
 	@FindBy(xpath="//input[@id='first-name']")
 	WebElement firstName;
@@ -28,12 +33,17 @@ public class CheckOutPage extends BasePage{
 	@FindBy(xpath="//span[@class='title']")
 	WebElement completeCheckout;
 	
+	//WebElement checkButton = driver.findElement(By.cssSelector("button[id='checkout']"));
 	
 	public void checkOutProduct() {
 		
-		act.moveToElement(checkOutButton).click(checkOutButton).build().perform();
-		//toWait.until(ExpectedConditions.elementToBeClickable(checkOutButton)).click();
-	
+		
+		//act.moveToElement(checkOutButton).doubleClick(checkOutButton).build().perform(); UNABLE TO CLICK
+		toWait.until(ExpectedConditions.elementToBeClickable(checkOutButton)).click(); //UNABLE TO CLICK
+		//checkOutButton.click(); UNABLE TO CLICK
+		//js.executeScript("arguments[0].scrollIntoView;", checkOutButton); UNABLE TO CLICK
+		//js.executeScript("window.scrollBy(0,600)");	
+		//js.executeScript("arguments[0].click();", checkOutButton); //UNABLE TO CLICK
 	}
 	
 	public void insertRecipientDetails(String firstName, String lastName, String postalCode) {
